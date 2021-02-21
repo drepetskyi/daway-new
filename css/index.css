@@ -1,0 +1,215 @@
+
+/*style for header in laptop*/
+header{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(-110deg, rgb(252, 145, 163), rgb(222, 238, 247), white);
+}
+.logo-img{
+    display: flex;
+    align-items: center;
+}
+.img-header{
+    height: 12vmin;
+}
+nav div a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: black;
+    width: 20%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 60%;
+} 
+nav ul li a {
+    text-decoration: none;
+    width: 20%;
+    color: black;
+    font-size: 1.7rem;
+}
+.mob-menu{
+    display: none;
+}
+
+.btn{
+    box-shadow: none !important;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+.dropdown-menu{
+    border: none !important;
+    opacity: .8;
+}
+.dropdown-item a{
+    color: black;
+    font-size: 1.5rem;
+}
+.yellow-line{
+    height: 2px; 
+    width: 250px; 
+    position: absolute; 
+    background: yellow;
+    animation: ly;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+} 
+.date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+} 
+@keyframes ly{
+    0% {left: 2%;}
+    100% {left: 70%;}
+}
+
+/*style for header in phone*/
+@media only screen and (max-width: 1235px) {
+    .logo-img img{
+        display: none;
+    }
+    nav{
+       justify-content: space-between;
+    }
+    nav ul{
+        display: none;
+    }
+    .mob-menu{
+        display: block;
+    }
+    .yellow-line {
+        display: block;
+        width: 50px; 
+    }
+    .date{
+        font-size: small;
+    }
+}
+
+/* style for main in laptop */
+main{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+article{
+    margin-top: 20px;
+    display: block;
+}
+.card-news{
+    display: flex;
+    justify-content: start;
+}
+.part-one{
+    display: flex;
+}
+.img-for-news{
+    margin: 2%;
+    height: 40%;
+    width: 35%;
+}
+.text-for-news{
+    margin: 2%;
+}
+.headline{
+    font-size: 2em;
+}
+.heading{
+    font-size: .8em;
+    margin-top: 1%;
+    text-align: end;
+    color: rgb(252, 145, 163);
+    font-style: italic;
+}
+.part-start{
+    font-size: 1.4em;
+}
+.published{
+    color: gray;
+}
+
+/* style for main in phone */
+@media only screen and (max-width: 1235px) {
+    .card-news{
+        display: block;
+    }
+    .part-one{
+        display: block;
+    }   
+    .img-for-news{
+        width: 96%;
+    }
+    .headline{
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .heading{
+        font-size: 0.7em;
+    }
+    .part-start{
+        font-size: 0.8em;
+    }
+    .published{
+        font-size: 0.65em;
+    }
+}
+
+/*style for comments*/
+
+/* style for footer*/
+.main-footer{
+    border-top: 2px solid #d657c1;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2em;
+}
+.main-footer a, .login a, .text-for-footer{
+    text-decoration: none;
+    color: lightgray;
+}
+/* style for footer in phone */
+@media only screen and (max-width: 1235px) {
+    .main-footer{
+        font-size: .8em;
+    }
+}
+.eapps-widget-toolbar-panel-share-block{
+    display: none !important;
+}
+
+.carousel{
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.current{
+    z-index: 99999;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    margin-right: 10%;
+    
+}
+
+.for-btn{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
